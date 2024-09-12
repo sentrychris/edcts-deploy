@@ -1,0 +1,5 @@
+0 */6 * * * /usr/bin/php /var/www/html/edcts/artisan edcts:cache:pages --type systems --channel pages:cache --pages 100 --flush --ttl 21600
+
+*/5 * * * * /usr/bin/bash /home/chris/edcts-uptime-monitor.sh
+
+0 * * * * /usr/bin/php /var/www/html/edcts/artisan edcts:cache:stats --ttl 7200 --flush
